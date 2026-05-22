@@ -1,0 +1,269 @@
+﻿baseURL: "http://localhost:1313/"
+languageCode: "fr-fr"
+title: "Hiba Bouhajla"
+theme: hugo-profile
+
+defaultContentLanguage: "fr"
+defaultContentLanguageInSubdir: false
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: gallery
+      name: Galerie
+      title: Galerie
+      url: /gallery
+      weight: 2
+
+params:
+  title: "Hiba Bouhajla"
+  description: "Étudiante en Systèmes Embarqués et Services Numériques à l'INPT"
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    # defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Hiba Bouhajla"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Bonjour, je suis"
+    title: "Hiba Bouhajla."
+    subtitle: "Étudiante en Systèmes Embarqués & Services Numériques"
+    content: "Passionnée par l'électronique, les systèmes embarqués et le développement numérique. J'aime concevoir des solutions qui allient hardware et software pour résoudre des problèmes concrets."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Mon CV"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/bouhajlahiba9-cpu
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/hiba-bouhajla-b11929378
+
+  # About
+  about:
+    enable: true
+    title: "À Propos de Moi"
+    image: "/images/me.png"
+    content: |-
+      Je suis étudiante en 1ère année à l'**Institut National des Postes et Télécommunications (INPT)** de Rabat, dans la filière **Systèmes Embarqués et Services Numériques**.
+
+      Après deux années de classes préparatoires en filière PSI à Meknès, j'ai intégré l'INPT où je développe mes compétences en électronique, programmation embarquée et développement numérique.
+
+      Je suis passionnée par la conception de systèmes intelligents combinant hardware et software, et je cherche à contribuer à des projets innovants.
+    skills:
+      enable: true
+      title: "Compétences techniques :"
+      items:
+        - "C / C++"
+        - "Python"
+        - "HTML / CSS"
+        - "Systèmes Embarqués"
+        - "Arduino"
+        - "Raspberry Pi"
+        - "ESP32"
+        - "VHDL / FPGA"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Formation & Parcours"
+    items:
+      - company: "INPT - Institut National des Postes et Télécommunications"
+        companyUrl: "https://www.inpt.ac.ma"
+        jobs:
+          - name: "Étudiante Ingénieure — Systèmes Embarqués & Services Numériques"
+            date: "2025 - 2028"
+            content: |
+              Formation d'ingénieure à l'INPT Rabat dans la filière Systèmes Embarqués et Services Numériques.
+
+              - Programmation embarquée (C/C++, Python)
+              - Electronique numérique et FPGA (VHDL)
+              - Microcontrôleurs : Arduino, ESP32, Raspberry Pi
+              - Développement web et services numériques
+
+      - company: "Classe Préparatoire — Meknès"
+        companyUrl: "#"
+        jobs:
+          - name: "Étudiante en Classe Préparatoire — Filière PSI"
+            date: "2023 - 2025"
+            content: |
+              Deux années de classes préparatoires aux grandes écoles en filière PSI (Physique, Sciences de l'Ingénieur) à Meknès.
+
+              - Mathématiques avancées
+              - Physique et Sciences de l'Ingénieur
+              - Informatique et algorithmique
+
+  # Education
+  education:
+    enable: true
+    title: "Formation"
+    index: false
+    items:
+      - title: "Diplôme d'Ingénieure — Systèmes Embarqués & Services Numériques"
+        school:
+          name: "INPT — Institut National des Postes et Télécommunications, Rabat"
+          url: "https://www.inpt.ac.ma"
+        date: "2025 - 2028"
+        content: |-
+          Formation d'ingénieure spécialisée en systèmes embarqués, électronique numérique et services numériques.
+
+          Matières principales :
+            - Programmation embarquée (C/C++, Python)
+            - Electronique numérique et VHDL/FPGA
+            - Microcontrôleurs et IoT
+            - Développement web et cloud
+
+      - title: "Classe Préparatoire — Filière PSI"
+        school:
+          name: "CPGE — Meknès"
+          url: "#"
+        date: "2023 - 2025"
+        content: |-
+          Formation intensive en mathématiques, physique et sciences de l'ingénieur préparant aux concours des grandes écoles d'ingénieurs.
+
+          Activités :
+            - Travaux pratiques en électronique et mécanique
+            - Projets de modélisation et simulation
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Réalisations"
+    items:
+      - title: Admission à l'INPT
+        content: Intégration de l'Institut National des Postes et Télécommunications de Rabat après concours national.
+        image: /images/achievement.jpg
+      - title: Diplôme Classes Préparatoires PSI
+        content: Validation de deux années de CPGE filière PSI à Meknès avec succès.
+        image: /images/achievement.jpg
+      - title: Maîtrise multilingue
+        content: Arabe (langue maternelle), Français (courant), Anglais (notions).
+        image: /images/achievement.jpg
+
+  # Projects
+  projects:
+    enable: true
+    title: "Mes Projets"
+    items:
+      - title: Gestion d'Accès via Google Sheets
+        content: Système de gestion de l'accès et des enregistrements connecté à Google Sheets et une base de données. Permet de contrôler les entrées/sorties et d'enregistrer les données en temps réel.
+        image: /images/projects/profile.png
+        featured:
+          name: Voir sur GitHub
+          link: https://github.com/bouhajlahiba9-cpu
+        badges:
+          - "Python"
+          - "Google Sheets API"
+          - "Base de données"
+          - "IoT"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/bouhajlahiba9-cpu
+
+      - title: Portfolio Personnel
+        content: Portfolio personnel conçu et déployé avec Hugo et le thème Hugo Profile. Hébergé sur GitHub Pages via Netlify.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Voir le site
+          link: https://bouhajlahiba9-cpu.github.io/mon-portfolio/
+        badges:
+          - "Hugo"
+          - "HTML/CSS"
+          - "GitHub Pages"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/bouhajlahiba9-cpu/mon-portfolio
+
+  # Contact
+  contact:
+    enable: true
+    title: "Me Contacter"
+    content: "N'hésitez pas à me contacter pour toute opportunité de stage, collaboration ou simplement pour échanger !"
+    btnName: "Envoyer un email"
+    btnLink: mailto:bouhajlahiba9@gmail.com
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Articles Récents
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/bouhajlahiba9-cpu
+      linkedin: https://www.linkedin.com/in/hiba-bouhajla-b11929378
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min de lecture"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Lire"
+    toc: "Table des matières"
+    copyright: "Tous droits réservés"
+    emailText: "Découvrez ce site"
+
+  datesFormat:
+    article: "2 Jan 2006"
+    articleList: "2 Jan 2006"
+    articleRecent: "2 Jan 2006"
